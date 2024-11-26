@@ -4,12 +4,21 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Close menu on link click (for mobile)
+  const handleLinkClick = () => {
+    if (window.innerWidth <= 1024) {
+      setIsOpen(false); // Close menu when a link is clicked on mobile
+    }
+  };
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 shadow-md z-50">
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center py-4">
         {/* Logo */}
-        <div className="text-2xl font-bold text-gray-800">
-          <Link to="/" className="hover:text-yellow-500">Ashit Negi</Link>
+        <div className="text-2xl font-bold text-white hover:text-yellow-500 transition-all duration-300">
+          <Link to="/" className="transform hover:scale-105">
+            Ashit Negi
+          </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -17,9 +26,9 @@ function Navbar() {
           className="lg:hidden cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <div className="w-6 h-0.5 bg-gray-800 mb-1"></div>
-          <div className="w-6 h-0.5 bg-gray-800 mb-1"></div>
-          <div className="w-6 h-0.5 bg-gray-800"></div>
+          <div className="w-6 h-0.5 bg-white mb-1"></div>
+          <div className="w-6 h-0.5 bg-white mb-1"></div>
+          <div className="w-6 h-0.5 bg-white"></div>
         </div>
 
         {/* Navigation Menu */}
@@ -32,7 +41,8 @@ function Navbar() {
             <li>
               <Link
                 to="/" // Home route
-                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300"
+                onClick={handleLinkClick}
+                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
                 Home
               </Link>
@@ -40,7 +50,8 @@ function Navbar() {
             <li>
               <Link
                 to="/about" // About route
-                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300"
+                onClick={handleLinkClick}
+                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
                 About
               </Link>
@@ -48,7 +59,8 @@ function Navbar() {
             <li>
               <Link
                 to="/services" // Services route
-                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300"
+                onClick={handleLinkClick}
+                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
                 Services
               </Link>
@@ -56,7 +68,8 @@ function Navbar() {
             <li>
               <Link
                 to="/portfolio" // Portfolio route
-                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300"
+                onClick={handleLinkClick}
+                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
                 Portfolio
               </Link>
@@ -64,7 +77,8 @@ function Navbar() {
             <li>
               <Link
                 to="/contact" // Contact route
-                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300"
+                onClick={handleLinkClick}
+                className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
                 Contact
               </Link>

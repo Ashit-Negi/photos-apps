@@ -104,10 +104,10 @@ function Contact() {
           <p className="text-lg font-semibold text-gray-700 mb-4">Or reach out to me via:</p>
           <ul className="space-y-4">
             <li>
-              <a href="tel:+1234567890" className="text-lg text-blue-500 hover:text-yellow-500">📞 +1 234 567 890</a>
+              <a href="tel:+1234567890" className="text-lg text-blue-500 hover:text-yellow-500">📞 +91 8077040296</a>
             </li>
             <li>
-              <a href="mailto:your-email@example.com" className="text-lg text-blue-500 hover:text-yellow-500">✉️ your-email@example.com</a>
+              <a href="mailto:your-email@example.com" className="text-lg text-blue-500 hover:text-yellow-500">✉️ ashitnegi7@gmail.com</a>
             </li>
             <li>
               <a href="https://www.facebook.com/yourfacebookid" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-500 hover:text-yellow-500">🌐 Facebook: @yourfacebookid</a>

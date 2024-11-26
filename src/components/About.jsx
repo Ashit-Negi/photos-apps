@@ -18,7 +18,7 @@ function About() {
           {/* Description */}
           <div className="flex-1">
             <p data-aos="fade-up" className="text-xl text-gray-700 mb-4">
-              Hi, I'm [Your Name], a professional photographer with over 5 years of experience
+              Hi, I'm Ashit Negi , a professional photographer with over 5 years of experience
               capturing the beauty of life through the lens. From intimate portraits to grand weddings
               and corporate events, I believe every moment tells a story.
             </p>

@@ -9,7 +9,7 @@ function Navbar() {
       <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center py-4">
         {/* Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <Link to="/" className="hover:text-yellow-500">MyBrand</Link>
+          <Link to="/" className="hover:text-yellow-500">Ashit Negi</Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}

@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close menu on link click (for mobile)
   const handleLinkClick = () => {
     if (window.innerWidth <= 1024) {
-      setIsOpen(false); // Close menu when a link is clicked on mobile
+      setIsOpen(false); // Close mobile menu
     }
   };
 
@@ -40,7 +39,7 @@ function Navbar() {
           <ul className="flex flex-col lg:flex-row lg:items-center space-y-6 lg:space-y-0 lg:space-x-6 mt-16 lg:mt-0">
             <li>
               <Link
-                to="/" // Home route
+                to="/"
                 onClick={handleLinkClick}
                 className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
@@ -49,7 +48,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/about" // About route
+                to="/about"
                 onClick={handleLinkClick}
                 className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
@@ -58,7 +57,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/services" // Services route
+                to="/services"
                 onClick={handleLinkClick}
                 className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
@@ -67,7 +66,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/portfolio" // Portfolio route
+                to="/portfolio"
                 onClick={handleLinkClick}
                 className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >
@@ -76,7 +75,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/contact" // Contact route
+                to="/contact"
                 onClick={handleLinkClick}
                 className="text-lg font-medium text-gray-800 hover:text-yellow-500 transition duration-300 transform hover:scale-110"
               >

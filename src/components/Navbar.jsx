@@ -27,7 +27,7 @@ function Navbar() {
         {/* Overlay */}
         {isOpen && (
           <div
-            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-60 z-40"
+            className="fixed top-0 left-0 w-full h-full bg-white bg-opacity-60 z-40"
             onClick={() => setIsOpen(false)} // Closes menu on overlay click
           ></div>
         )}

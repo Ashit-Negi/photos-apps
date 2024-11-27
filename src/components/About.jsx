@@ -1,5 +1,5 @@
 import React from 'react'
-
+import heroImage from '../photo/photo-app-1.jpg'
 function About() {
   return (
     <section id="about" className="py-16 bg-white">
@@ -9,7 +9,7 @@ function About() {
           {/* Image */}
           <div className="flex-1">
             <img 
-              src="https://source.unsplash.com/400x400/?portrait" 
+              src={heroImage} 
               alt="Photographer" 
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />

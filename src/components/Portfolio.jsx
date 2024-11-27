@@ -1,16 +1,16 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import img1 from "../photo/photo-app-9.jpg"; 
+import img2 from "../photo/photo-app-3.jpg"; 
+import img3 from "../photo/photo-app-4.jpg"; 
+import img4 from "../photo/photo-app-8.jpg"; 
+import img5 from "../photo/photo-app-6.jpg"; 
+import img6 from "../photo/photo-app-10.jpg"; 
+
 
 function Portfolio() {
-  const images = [
-    "https://source.unsplash.com/300x300/?nature",
-    "https://source.unsplash.com/300x300/?wedding",
-    "https://source.unsplash.com/300x300/?portrait",
-    "https://source.unsplash.com/300x300/?city",
-    "https://source.unsplash.com/300x300/?travel",
-    "https://source.unsplash.com/300x300/?event",
-  ];
+  const images = [img1 , img2 , img3 , img4 , img5 , img6];
 
   return (
     <section id="portfolio" className="py-16 bg-gray-100">
@@ -27,12 +27,11 @@ function Portfolio() {
                 src={src}
                 alt={`Portfolio ${index + 1}`}
                 effect="blur"
-                className="w-full h-60 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+                className="w-full h-50 object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
               />
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                 <p className="text-white font-semibold text-lg">
-                  View Details
                 </p>
               </div>
             </div>
